@@ -36,7 +36,7 @@ export default function Purses() {
               </ListItemIcon>
               <ListItemText
                 primary={pursePetname}
-                secondary={<><b>{extent} {issuerPetname}</b> {brandRegKey ? <i>({brandRegKey})</i> : ''}</>}
+                secondary={<><b>{Array.isArray(extent) ? extent.length : extent} {issuerPetname}</b> {brandRegKey ? <i>({brandRegKey})</i> : ''}</>}
               />
             </ListItem>
           ))}
